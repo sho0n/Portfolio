@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: rgb(41, 40, 40);
+ 
 }
 
 .cover {
@@ -9,8 +9,42 @@
   background: url(bk.jpg);
   background-size: cover;
   background-repeat: repeat;
-  opacity: 0.4;
+  opacity: 0.2;
   background-color: black; 
+}
+
+.parent { width: 500px; height:500px;
+margin-left: 25%;}
+.box {
+    width: 20px;
+    height: 10px;
+    background-color: orangered;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+.box1{
+    width: 10px;
+    height: 150px;
+    background-color: teal;
+    color: teal;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position:absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
 }
 
 
@@ -21,8 +55,18 @@
   color: orangered;
   font-size: 40px;
   font-family: 'Megrim', cursive;
+ }
 
-  
-  
+ .grid-container {
+  display: grid;
+  grid-template-columns: 70% auto;
+  background-color: black;
+  padding: 10px;
 }
-
+.grid-item {
+  background-color: firebrick;
+  border: 1px solid rgba(129, 17, 17, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
