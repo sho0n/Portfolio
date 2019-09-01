@@ -1,33 +1,72 @@
 .App {
   text-align: center;
+ 
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.cover {
+  width: 100%;
+  height: 400px;
+  
+  background-size: cover;
+  background-repeat: repeat;
+  opacity: 0.2;
+  background-color: black; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.parent { width: 500px; height:500px;
+margin-left: 25%;}
+.box {
+    width: 20px;
+    height: 10px;
+    background-color: orangered;
+    font-size: 20px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+.box1{
+    width: 10px;
+    height: 150px;
+    background-color: teal;
+    color: teal;
+    font-size: 18px;
+    left: 150px;
+    top: 25px;
+    position:absolute;
+    -webkit-transition-property: width height background-color font-size left top color;
+    -webkit-transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    transition-property: width height background-color font-size left top color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
+
+.title {
+  text-align: center;
+  color: orangered;
+  font-size: 40px;
+  font-family: 'Megrim', cursive;
+ }
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: 70% auto;
+  background-color: black;
+  padding: 10px;
+}
+.grid-item {
+  background-color: firebrick;
+  border: 1px solid rgba(129, 17, 17, 0.8);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
 }
