@@ -1,6 +1,11 @@
 import React from 'react';
 import './App.css';
+import Header from './Header/Header.js';
+import NavBar from './NavBar/NavBar';
+import Technologies from './Technologies/Technologies'
 import html from './html.png';
+import WhoAmI from './WhoAmI/WhoAmI';
+
 
 
 //TRANSITION FOR TITLE //
@@ -23,55 +28,10 @@ var intervalID = window.setInterval(updateTransition, 7000);
 function App() {
   return (
     <div className="App">
-		
-		
-    	<div className="cover">
-		
-        	<div className="parent">
-			
-        		<div className='box' >
-					{updateTransition}
-          			<div className='title'>Sonia Sanchez</div>
-					<div className="grid-item1">FullStack developer</div>
-					<div className="location">LONDON</div>
-          		</div>
-				
-        	</div>
-		</div>
-		<div className="grid-container">
-  			
-			<div className="grid-item1">REACT</div>
-			<div className="grid-item1">REACT</div>
-			<div className="grid-item1">JAVA</div>
-			<div className="grid-item1">GITHUB</div>
-			<div className="grid-item1">GITHUB</div>
-			<div className="grid-item">
-				<div className='texto'>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				</div>
-			</div>
-			<div className="grid-item">
-			<div className='texto'>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				</div>
-			</div>
-			<div className="grid-item">
-				<div className='texto'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				</div>
-			</div>
-			<div className="grid-item">
-				<div className='texto'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				</div>
-			</div>
-			<div className="grid-item">
-				<div className='texto'>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-				</div>
-			</div>
-			
-			</div>
+		<Header/>
+		<NavBar/>
+		<Technologies></Technologies>
+		<WhoAmI></WhoAmI>
 	</div>
   );
 }
