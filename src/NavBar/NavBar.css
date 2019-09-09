@@ -1,10 +1,9 @@
 .nav {
     display: flex;
     padding-top: 10px;
-    background: gray;
-    
+    background: white; 
+    width: 100%;  
 }
-
 .nav-item {
     flex: 1;
     background: black;
@@ -12,7 +11,14 @@
     font-weight: bold;
     padding: 10px;
 }
-
 .nav-item:nth-child(odd) {
     margin: 0px 10px;
+}
+.content {
+    padding: 10px;
+    background-color: black;
+    margin: 10px;
+    color: azure;
+    font-weight: 400;
+    
 }

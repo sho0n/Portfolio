@@ -1,13 +1,14 @@
-import React from "react";
+import React from 'react';
+
 
 function Technologies() {
   return (
     <>
       <div className="grid-container">
-        <div className="grid-item1">REACT</div>
-        <div className="grid-item1">REACT</div>
+        <div className="grid-item1">HTML</div>
+        <div className="grid-item1">CSS</div>
+        <div className="grid-item1">JAVASCRIPT</div>
         <div className="grid-item1">JAVA</div>
-        <div className="grid-item1">GITHUB</div>
         <div className="grid-item1">GITHUB</div>
         <div className="grid-item">
           <div className="texto">

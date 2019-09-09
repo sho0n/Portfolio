@@ -2,9 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header/Header.js';
 import NavBar from './NavBar/NavBar';
-import Technologies from './Technologies/Technologies'
-import html from './html.png';
-import WhoAmI from './WhoAmI/WhoAmI';
+
 
 
 
@@ -14,10 +12,11 @@ function updateTransition() {
    
   if (el) {
     el.className = "box1";
-  } else {
-    el = document.querySelector("div.box1");
-    el.className = "box";
-  }
+  } 
+  //else {
+   // el = document.querySelector("div.box1");
+   // el.className = "box";
+  //}
    return el;
 }
 
@@ -30,8 +29,8 @@ function App() {
     <div className="App">
 		<Header/>
 		<NavBar/>
-		<Technologies></Technologies>
-		<WhoAmI></WhoAmI>
+    
+		
 	</div>
   );
 }
