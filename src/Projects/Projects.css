@@ -1,0 +1,13 @@
+.projContainer {
+    margin: 0 auto;
+}
+
+
+.proj {
+    width: 30%;
+    height: 350px;
+}
+iframe {
+    height: 500px;
+}
+

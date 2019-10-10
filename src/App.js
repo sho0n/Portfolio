@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Header from './Header/Header.js';
 import NavBar from './NavBar/NavBar';
-import styled from 'styled-components';
 
 
 

@@ -2,17 +2,18 @@
     display: flex;
     padding-top: 10px;
     background: white; 
-    width: 100%;  
+    width: 100%; 
+    border-bottom: 2px solid black;
+    padding-bottom: 15px; 
 }
 .nav-item {
     flex: 1;
- 
     font-weight: bold;
-    padding: 10px;
+    font-size: 14px;
 }
-.nav-item:nth-child(odd) {
+/* .nav-item:nth-child(odd) {
     margin: 0px 10px;
-}
+} */
 .content {
     padding: 10px;
     background-color: black;
@@ -30,5 +31,13 @@
     
 background: #FFFFFF;
 
-;
+
+}
+@media screen and (min-width: 600px) {
+    .nav-item {
+        flex: 1;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
 }

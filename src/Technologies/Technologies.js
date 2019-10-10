@@ -1,59 +1,66 @@
 import React from 'react';
+import './Technologies.css';
+import '../App.css'
+import Java from './javaIcon.png';
+import Js from './jsIcon.png';
+import Re from './reactIcon.png';
+import HT from './htmlIcon.png';
+import C from './cssIcon.png';
+import No from './nodeIcon.png';
+
+
 
 
 function Technologies() {
-  return (
-    <>
-      <div className="grid-container">
-        <div className="grid-item1">HTML</div>
-        <div className="grid-item1">CSS</div>
-        <div className="grid-item1">JAVASCRIPT</div>
-        <div className="grid-item1">JAVA</div>
-        <div className="grid-item1">GITHUB</div>
-        <div className="grid-item">
-          <div className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </div>
-        </div>
-        <div className="grid-item">
-          <div className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </div>
-        </div>
-        <div className="grid-item">
-          <div className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </div>
-        </div>
-        <div className="grid-item">
-          <div className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </div>
-        </div>
-        <div className="grid-item">
-          <div className="texto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </div>
-        </div>
-      </div>
-      ;
-    </>
-  );
+	return (
+		<>
+		
+<div class="call-outs">
+	<div class="call-out one">
+		<div class="links">
+			
+			<a href="#"><img src={HT} alt='HTML' className='icons'/></a>
+		</div>
+	</div>
+
+	<div class="call-out two">
+		<div class="links">
+			
+			<a href="#"><img src={C} alt='CSS3' className='icons'/></a>
+		</div>
+	</div>
+
+	<div class="call-out three">
+		<div class="links">
+			<img src={Js} alt='JavaScript' className='icons' />
+			<a href="#">JAVASCRIPT</a>
+		</div>
+	</div>
+
+	<div class="call-out four">
+		<div class="links">
+		<img src={Re} alt='React' className='icons'/>
+		<a href="#">REACT</a>
+		</div>
+	</div>
+
+	<div class="call-out four">
+		<div class="links">
+			<img src={No} alt='Nodejs' className='icons'/>
+			<a href="#">NODE.JS</a>
+		</div>
+	</div>
+
+	<div class="call-out four">
+		<div class="links">
+			<img src={Java} alt='Java' className='icons'/>
+			<a href="#">JAVA</a>
+		</div>
+	</div>
+
+</div>
+</>
+	)
 }
 
 export default Technologies;

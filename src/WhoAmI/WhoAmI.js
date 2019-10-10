@@ -5,12 +5,13 @@ import styled from 'styled-components'
 
 
 const Who = styled.div`
-    width: 40%;
+    width: 95%;
     justify-content: space-evenly;
-    background-color: black;
     line-height: 1.5;
     margin: 0 auto;
     text-align: center;
+    color: black;
+    padding: 20px;
 
 `
 
