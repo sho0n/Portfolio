@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Header/Header.js';
 import NavBar from './NavBar/NavBar';
+import Switch from './Switch'
 
 
 
@@ -22,16 +23,16 @@ function updateTransition() {
 
 
 
-var intervalID = window.setInterval(updateTransition, 7000);
+var intervalID = window.setInterval(updateTransition, 1000);
 
 function App() {
   return (
     <div className="App">
-		<Header/>
-		<NavBar/>
+      <Switch/>
+		  <Header/>
+		  <NavBar/>
     
-		
-	</div>
+    </div>
   );
 }
 

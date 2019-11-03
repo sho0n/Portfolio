@@ -1,24 +1,11 @@
 import React from "react";
 import './WhoAmI.css';
-//import { Link } from "react-router-dom/cjs/react-router-dom";
-import styled from 'styled-components'
 
-
-const Who = styled.div`
-    width: 95%;
-    justify-content: space-evenly;
-    line-height: 1.5;
-    margin: 0 auto;
-    text-align: center;
-    color: black;
-    padding: 20px;
-
-`
 
 function WhoAmI() {
   return (
       <div className='container_W '>
-    <Who>
+    
       <p>
         Hi, I am Sonia T. Sanchez, welcome to my personal site.
         <br></br>
@@ -33,7 +20,7 @@ function WhoAmI() {
         Silicon Roundabout and Kodiri event in which we completed coding
         challenges and I score a maximum of 91 points .
       </p>
-      </Who>
+     
       </div>
   );
 }

@@ -14,52 +14,89 @@ import No from './nodeIcon.png';
 function Technologies() {
 	return (
 		<>
-		
-<div class="call-outs">
-	<div class="call-out one">
-		<div class="links">
-			
-			<a href="#"><img src={HT} alt='HTML' className='icons'/></a>
-		</div>
-	</div>
+			<div class="gridOne">
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+							<img src={HT} alt="Avatar" className='cardImg' />
+						</div>
+						<div className="flip-card-back">
+							<br/>
+							<br/>
+							<h1>HTML5</h1>
+							<p>Expert</p>
+						</div>
+					</div>
+				</div>
 
-	<div class="call-out two">
-		<div class="links">
-			
-			<a href="#"><img src={C} alt='CSS3' className='icons'/></a>
-		</div>
-	</div>
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+							<img src={C} alt='CSS3' className='icons' />
+						</div>
+						<div className="flip-card-back">
+							<br/>
+							<br/>
+							<h1>CSS 3</h1>
+							<p>Expert</p>
+						</div>
+					</div>
+				</div>
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+							<img src={Js} alt='JavaScript' className='icons' />
 
-	<div class="call-out three">
-		<div class="links">
-			<img src={Js} alt='JavaScript' className='icons' />
-			<a href="#">JAVASCRIPT</a>
-		</div>
-	</div>
-
-	<div class="call-out four">
-		<div class="links">
-		<img src={Re} alt='React' className='icons'/>
-		<a href="#">REACT</a>
-		</div>
-	</div>
-
-	<div class="call-out four">
-		<div class="links">
-			<img src={No} alt='Nodejs' className='icons'/>
-			<a href="#">NODE.JS</a>
-		</div>
-	</div>
-
-	<div class="call-out four">
-		<div class="links">
-			<img src={Java} alt='Java' className='icons'/>
-			<a href="#">JAVA</a>
-		</div>
-	</div>
-
-</div>
-</>
+						</div>
+						<div className="flip-card-back">
+							<br/>
+							<br/>
+							<h1>JAVASCRIPT</h1>
+							<p>Intermediate+</p>
+						</div>
+					</div>
+				</div>
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+							<img src={Re} alt='React' className='icons' />
+						</div>
+						<div className="flip-card-back">
+							<br/>
+							<br/>	
+							<h1>REACT</h1>
+							<p>Intermidiate</p>
+						</div>
+					</div>
+				</div>
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+							<img src={No} alt='Nodejs' className='icons' />
+						</div>
+						<div className="flip-card-back">
+							<br/>
+							<br/>
+							<h1>NODE.JS</h1>
+							<p>Itermediate</p>
+						</div>
+					</div>
+				</div>
+				<div className="flip-card">
+					<div className="flip-card-inner">
+						<div className="flip-card-front">
+							<img src={Java} alt='Java' className='icons' />
+						</div>
+						<div className="flip-card-back">
+							<br/>
+							<br/>
+							<h1>JAVA</h1>
+							<p>Beginner</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
 	)
 }
 

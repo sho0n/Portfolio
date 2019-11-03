@@ -12,10 +12,8 @@
 	margin: .5em;
 	width: 100%;
 	max-width: 250px;
-	text-align: center;
-	border-radius: 50%;
-    overflow: hidden;
-    
+	text-align: center;	
+    overflow: hidden;   
 }
 
 /* display .call-out as 1:1 ratio */
@@ -34,8 +32,7 @@
 	left: 0;
 }
 
-.links a {
-	
+.links a {	
 	left: 0;
 	right: 0;
 	color: #FFF;
@@ -68,3 +65,62 @@
 .icons {
     width: 100%;
 }
+
+.cardImg {
+	width:200px;
+	height:200px;
+	top: 10px;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 210px;
+	margin-top: 50px;
+	height: 200px;
+	border-radius: 100px;	
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: rgb(71, 70, 70);
+	color: white;
+	transform: rotateY(180deg);
+	border-radius: 100px;
+  }
+
+ .gridOne {
+	  display: grid;
+	  width: 98%;
+	  margin-left: 15px;
+	  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+  }

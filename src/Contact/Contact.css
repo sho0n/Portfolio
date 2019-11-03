@@ -2,8 +2,18 @@
     margin: 0 auto;
     margin-top: 30px;
     padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    
 }
-.contact {
+.contact {   
     padding: 20px;
     font-size: 18px;
 }
+
+.cont{
+    margin-bottom: 15px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
