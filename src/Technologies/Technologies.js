@@ -65,7 +65,7 @@ function Technologies() {
 							<br/>
 							<br/>	
 							<h1>REACT</h1>
-							<p>Intermidiate</p>
+							<p>intermediate</p>
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ function Technologies() {
 							<br/>
 							<br/>
 							<h1>NODE.JS</h1>
-							<p>Itermediate</p>
+							<p>Intermediate</p>
 						</div>
 					</div>
 				</div>

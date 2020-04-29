@@ -13,3 +13,10 @@ iframe {
     height: 500px;
 }
 
+.projectLink {
+    color: black;
+    font-size: 23px;
+    text-transform: capitalize;
+}
+
+
