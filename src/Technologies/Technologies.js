@@ -52,7 +52,7 @@ function Technologies() {
 							<br/>
 							<br/>
 							<h1>JAVASCRIPT</h1>
-							<p>Intermediate+</p>
+							<p>Intermediate</p>
 						</div>
 					</div>
 				</div>
@@ -65,7 +65,7 @@ function Technologies() {
 							<br/>
 							<br/>	
 							<h1>REACT</h1>
-							<p>intermediate</p>
+							<p>Intermediate</p>
 						</div>
 					</div>
 				</div>
