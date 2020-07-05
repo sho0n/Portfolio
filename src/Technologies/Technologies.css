@@ -60,6 +60,7 @@
 		width: 23.5%;
 		margin: 0;
 	}
+	
 }
 
 .icons {
@@ -71,12 +72,26 @@
 	height:200px;
 	top: 10px;
 }
+
+@media screen and (min-width: 600px) {
+	.flip-card {
+		background-color: transparent;
+		width: 210px;
+		height: 220px;
+		margin: 0 auto;
+		margin-top: 50px;
+		border-radius: 100px;	
+		perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	  }
+  }
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
 	background-color: transparent;
 	width: 210px;
+	height: 220px;
+	margin: auto;
 	margin-top: 50px;
-	height: 200px;
 	border-radius: 100px;	
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }

@@ -11,8 +11,9 @@ html {
   value is "dark
 */
 html[data-theme="dark"] {
-  background-color: rgb(2, 24, 36);
-  color: #fff;
+  background-color: rgb(2, 22, 32);
+  color: rgb(146, 145, 145);
+ 
 }
 
 .App {
@@ -59,7 +60,7 @@ html {
 }
 
 .texto-2 {
-  background: white;
+  background: rgb(134, 134, 134);
   padding: 10px;
   margin: 10px;
   font-size: 17px;

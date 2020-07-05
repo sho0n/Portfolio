@@ -1,19 +1,40 @@
 .grid-container_Contact {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    
+    text-align: start;
 }
 .contact {   
     padding: 20px;
     font-size: 18px;
+    margin-top: 20px;
 }
 
-.cont{
-    margin-bottom: 15px;
-    border-radius: 50px;
-    background-color: #fff;
+.fa-envelope-open {
+    height: 50px;
+    width: 50px;
+    color: rgb(250, 92, 145);
 }
+.fa-github {
+    height: 50px;
+    width: 50px;
+    color: rgb(250, 92, 145);
+}
+.fa-linkedin {
+    height: 50px;
+    width: 50px;
+    color: rgb(250, 92, 145);
+}
+ .contactLink {
+     color: rgb(139, 139, 139);
+     text-decoration: blueviolet;
+ }
 
+ @media only screen and (min-width: 600px) {
+     .grid-container_Contact{
+         text-align: center;
+         margin: 0 auto;
+     }
+ }

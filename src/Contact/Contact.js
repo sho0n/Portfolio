@@ -1,93 +1,36 @@
 import React, { Component } from "react";
 import "./Contact.css";
-import git from "./github.png";
-import linkedin from "./linkedin.png";
-import mail from "./mail.png";
-import phone from "./telephone.png";
-import axios from 'axios';
+
 
 class Contact extends Component {
 
-    state = {
-        name: '',
-        message: '',
-        email: '',
-        sent: false,
-        buttonText: 'Send Message'
-    }
-
-    formSubmit = (e) => {
-        e.preventDefault()
-      
-        this.setState({
-            buttonText: '...sending'
-        })
-      
-        let data = {
-            name: this.state.name,
-            email: this.state.email,
-            message: this.state.message
-        }
-        
-        axios.post('API_URI', data)
-        .then( res => {
-            this.setState({ sent: true }, this.resetForm())
-        })
-        .catch( () => {
-          console.log('Message not sent')
-        })
-      }
-
-    resetForm = () => {
-        this.setState({
-            name: '',
-            message: '',
-            email: ''
-        })
-    }
+  
 
     render() {
-        return(
-            <div className="row img-bg contact-page">
-				<div className="offset-2 d-none d-sm-none d-md-none d-lg-block"></div>
-				<div className="col-sm-11 col-md-12 col-lg-10">
-					<div className="row">
-                        <div className="col-sm-12 col-md-9 col-lg-7">
-                            <div className="main-section" id="contact">
-                                <h1>Contact Me</h1>
-                                <p className="description-text">
-                                Leave me a message below and I'll get back to you as soon as possible. 
-                                </p>
-                                <div className="sep-small"></div>
+        return (
+            <div className='grid-container_Contact'>
+            <div className="Contact">
+                <a className="contactLink" href="mailto:shon.sanches@gmail.com">
+                    <i class="fa fa-envelope-open fa-lg"></i>
+                                            Shon.sanches@gmail.com
+                                        </a>
+            </div>
+            <div className="Contact">
+                <a className="contactLink" href="https://www.github.com/sho0n">
+                    <i class="fa fa-github fa-lg"></i>
+                                            Github
+                                        </a>
+            </div>
+            <div className="Contact">
 
-                                <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
-                                    <label class="message" htmlFor="message-input">Your Message</label>
-                                    <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
-                                    <div className="sep-small"></div>
+                <a className="contactLink" href="https://www.linkedin.com/in/sonia-tejero-sanchez/">
+                    <i class="fa fa-linkedin fa-lg"></i>
+                                            Linkedin
+                                        </a>
 
-                                    <label class="message-name" htmlFor="message-name">Your Name</label>
-                                    <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
-                                    <div className="sep-small"></div>
 
-                                    <label class="message-email" htmlFor="message-email">Your Email</label>
-                                    <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
-                                    <div className="sep-medium"></div>
-
-                                    <div className="button--container">
-                                        { (!this.state.sent)
-                                        ?
-                                        <button type="submit" className="button button-primary">{this.state.buttonText}</button>
-                                        :
-                                        <button className="button button-disabled">Message Sent</button>
-                                        }
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-				</div>
-			</div>
+            </div>
+            </div>
         );
     }
 }

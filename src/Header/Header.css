@@ -69,12 +69,12 @@
 }
 
 .location {
+  padding-top:10px;
   text-align: center;
   color: rgb(243, 30, 101);
-
-  font-size: 25px;
-  font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   z-index: 4;
   position: relative;
 }

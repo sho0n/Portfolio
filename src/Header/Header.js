@@ -12,7 +12,7 @@ function Header() {
                 <div className="box">
                     <div className="title">Sonia Sanchez</div>
                     <div className="grid-item1">FullStack developer</div>
-                    <div className="location">LONDON</div>
+                    <div className="location">LONDON / EUSKADI</div>
                 </div>
             </div>
         </div>
