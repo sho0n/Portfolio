@@ -5,26 +5,26 @@ import spain from './spain.png';
 import uk from './uk.png';
 
 
-class WhoAmI extends Component  {
+class WhoAmI extends Component {
 	constructor() {
 		super();
 		this.state = {
 			clas: ''
 		}
 	}
-	setTextEn(){
+	setTextEn() {
 		this.setState({
 			clas: 'en'
 		})
-		
+
 	};
-	setTextEs(){
+	setTextEs() {
 		this.setState({
 			clas: 'es'
 		})
 
 	};
-	setTextEus(){
+	setTextEus() {
 		this.setState({
 			clas: 'eus'
 		})
@@ -32,22 +32,22 @@ class WhoAmI extends Component  {
 	render() {
 		const clas = this.state.clas;
 		let text;
-		if(clas === 'es') {
+		if (clas === 'es') {
 			text = <p>
-			Hola, mi nombre es Sonia, bienvenido a mi web personal.
+				Hola, mi nombre es Sonia, bienvenido a mi web personal.
 		  <br></br>
 		  He atendido diferentes workshops y quedadas de programacion,
 		  me sorprendió el poder del JavaScript moderno.
 		  <br></br>
-		  Actualmente estoy cursando el ultimo año de mis estudios, desarrollo de software y 
+		  Actualmente estoy cursando el ultimo año de mis estudios, desarrollo de software y
 		  Networking, me gustaría encontrar un puesto como desarrollador junior en un ambiente Agile.
 		  <br></br>
 		  Disfruto de formar parte de un equipo y la satisfacción de resolver problemas en equipo.
-		   Recientemente he atendido un evento de Silicon Roundabout 
+		   Recientemente he atendido un evento de Silicon Roundabout
 		  y Kodiri en el que completamos desafíos de JavaScript y puntué un máximo de 91 puntos de 100.
 		</p>
-		} else if(clas === 'en') {
-				text = <p>
+		} else if (clas === 'en') {
+			text = <p>
 				Hi, I am Sonia T. Sanchez, welcome to my personal site.
 				<br></br>
 				I attended coding workshops and meetups in the London area and I was
@@ -63,7 +63,7 @@ class WhoAmI extends Component  {
 			  </p>
 		} else {
 			text = <p>
-			Kaixo nire izena Sonia da, ongi etorri nire webgune pertsonalera.
+				Kaixo nire izena Sonia da, ongi etorri nire webgune pertsonalera.
 			  <br></br>
 		   Tailer eta programazio topaketetan parte hartu dut,
 			  JavaScript modernoaren potentziarekin harritu nintzen.
@@ -85,8 +85,8 @@ class WhoAmI extends Component  {
 				</div >
 				<div className='whoText'>
 					{text}
-					</div>
 				</div>
+			</div>
 		);
 	}
 }
